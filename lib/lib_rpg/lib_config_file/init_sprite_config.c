@@ -41,6 +41,7 @@ config_map_over_world.txt");
         sfSprite_setTexture(id_map->sprite ,id_map->texture,sfTrue);
         sfFloatRect bounds = sfSprite_getGlobalBounds(id_map->sprite );
         id_map->vector_3 = (sfVector2f){bounds.width,bounds.height};
+        printf("name : %s | x : %f y : %f\n",id_map->name,id_map->vector_3.x,id_map->vector_3.y);
         sfSprite_setPosition(id_map->sprite ,id_map->vector);
         add_node(&id_map_head, &id_map_tail, &id_map);
         id_map = id_map->next;

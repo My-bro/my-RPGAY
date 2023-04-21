@@ -45,6 +45,7 @@ int main(int argc, char **argv)
 animations->sprite_characters};
     graph_t graph = {window,event,view,animations,map_node,
 door_node,colision,direction,layer};
+    return 0;
     winopen(window , graph);
     return 0;
 }
