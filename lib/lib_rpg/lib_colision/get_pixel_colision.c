@@ -22,10 +22,13 @@ unsigned int left[2], unsigned int right[2])
      if (right[0] > map_node->vector_3.x - 20) {
         return -1;
     }
+    printf("1\n");
     map_node->pixel_colision.Color_left =
 sfImage_getPixel(map_node->image, left[0], left[1]);
+    printf("2\n");
     map_node->pixel_colision.Color_right =
 sfImage_getPixel(map_node->image,right[0] , right[1]);
+     printf("3\n");
     return 0;
 }
 
@@ -39,10 +42,13 @@ unsigned int up[2], unsigned int down[2])
      if (down[0] > map_node->vector_3.y - 20) {
         return -1;
     }
+     printf("4\n");
     map_node->pixel_colision.Color_up =
 sfImage_getPixel(map_node->image, up[0], up[1]);
+     printf("5\n");
     map_node->pixel_colision.Color_down =
 sfImage_getPixel(map_node->image, down[0] , down[1]);
+     printf("6\n");
     return 0;
 }
 
