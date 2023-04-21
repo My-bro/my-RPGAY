@@ -37,7 +37,6 @@ int main(int argc, char **argv)
     sfRenderWindow_setFramerateLimit(window, FRAME_LIMITE);
     animations_t *animations = malloc(sizeof(animations_t));
     init_every_struct(&view, animations);
-    //pixel_colition_t pixel_colision;
     node_map_t *map_node = init_sprite_config();
     node_map_t *door_node = init_door_config();
     direction_t colision = {false,false,false,false};
