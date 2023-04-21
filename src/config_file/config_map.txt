@@ -1,0 +1,31 @@
+[GRASS_BIOME] 1-4 0 FROM [0-0] [100-100]
+
+    [MUD]     1-18 -1 AT [1-1] [1-4] [2-2] [9-3]
+    [BOSQUET] 4-9  0 FROM [3-3] [18-9]
+
+    [SENTIER] 1-7   0  FROM [4-11] [16-14]
+    [PLACE_C] 1-7   0  FROM [15-10] [26-20]
+
+    [HOUSE]   2-0   0  FROM [6-10] [16-11]
+    [DOOR]    4-16  0  FROM [6-10] [16-11]
+    [ROOF]    2-3   19 FROM [6-9]  [16-10]
+    [WINDOW]  3-12  19 FROM [6-9]  [16-10]
+
+    [HOUSE]   2-0   0  FROM [6-14] [16-15]
+    [DOOR]    4-16  0  FROM [6-14] [16-15]
+    [ROOF]    2-3   19 FROM [6-13] [16-14]
+    [WINDOW]  3-12  19 FROM [6-13] [16-14]
+
+    [MAYOR_C] 2-0   0  FROM [20-11] [23-12]
+    [MAYOR_B]   2-4   19  AT   [20-10] [22-10]
+    [MAYOR_E]   2-0   19  AT   [21-10]
+    [MAYOR_R]   2-5   19  AT [21-9]
+    [MAYOR_W]   3-9   19  AT [21-9]
+
+    [MARKET]    2-14  0   AT [23-9]
+    [MKH]       2-16  0   AT [22-9]
+    [STAND]     2-12  0   AT [16-16]
+
+[SNOW_BIOME] 1-10 0 FROM [100-0] [200-100]
+[PURP_BIOME] 1-16 0 FROM [100-100] [200-200]
+[SAND_BIOME] 1-13 0 FROM [0-100] [100-200]

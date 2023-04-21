@@ -1,0 +1,5 @@
+OVER_WORD_COLISION Colision [0:0] ./src/sprite/map_over_world/over_world_colision.png
+OVER_WORD_BASE Graphics_Base [0:0] ./src/sprite/map_over_world/over_world_base.png
+OVER_WORD_TREE Graphics_Layer [0:0] ./src/sprite/map_over_world/over_world_trees.png
+OVER_WORD_ROOM_1_COLISION Colision [100:5363] ./src/sprite/map_over_worl_room_1/first_room_colision.png
+OVER_WORD_ROOM_1_BASE Graphics_Base [100:5363] ./src/sprite/map_over_worl_room_1/first_room_layer_1.png
