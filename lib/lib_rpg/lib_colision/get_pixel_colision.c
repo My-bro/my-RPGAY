@@ -16,9 +16,11 @@ int check_x_axis(node_map_t *map_node, sfVector2f pos_circle,
 unsigned int left[2], unsigned int right[2])
 {
     printf("aaaa %f\n",map_node->vector_3.x );
+    printf("left values %u\n",left[0]);
     if (left[0] < 2 ){
         return -1;
     }
+     printf("right values %u\n",right[0]);
      if (right[0] > map_node->vector_3.x - 20) {
         return -1;
     }
@@ -36,9 +38,11 @@ int check_y_axis(node_map_t *map_node, sfVector2f pos_circle,
 unsigned int up[2], unsigned int down[2])
 {
     printf("bbb %f\n",map_node->vector_3.y );
-    if (up[1] < 2) {
+     printf("up values %f\n",up[1]);
+    if (up[1] < 4) {
         return -1;
     }
+    printf("down values %f\n",down[1]);
      if (down[1] > map_node->vector_3.y - 20) {
         return -1;
     }
@@ -62,7 +66,7 @@ sfVector2f pos_circle)
         if (my_strcmp(map_node->type,"Colision") == 1) {
             printf("name : %s\n",map_node->name);
             //printf("x : %d y : %d\n",map_node->name);
-            unsigned int left[2]  = {pos_circle.x - 2 - x,pos_circle.y + 5 - y};
+            unsigned int left[2]  = {pos_circle.x - 0 - x,pos_circle.y + 5 - y};
             unsigned int right[2] = { pos_circle.x + 20 - x, pos_circle.y - y};
             unsigned int up[2] = { pos_circle.x + 5 - x , pos_circle.y - 2 - y};
             unsigned int down[2]  = {  pos_circle.x + 5 - x , pos_circle.y + 12 - y};
