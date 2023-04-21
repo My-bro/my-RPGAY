@@ -36,10 +36,10 @@ int check_y_axis(node_map_t *map_node, sfVector2f pos_circle,
 unsigned int up[2], unsigned int down[2])
 {
     printf("bbb %f\n",map_node->vector_3.y );
-    if (up[0] < 2) {
+    if (up[1] < 2) {
         return -1;
     }
-     if (down[0] > map_node->vector_3.y - 20) {
+     if (down[1] > map_node->vector_3.y - 20) {
         return -1;
     }
      printf("4\n");

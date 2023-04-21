@@ -34,7 +34,7 @@ int main(int argc, char **argv)
     view_t view;
     sfRenderWindow *window = sfRenderWindow_create((sfVideoMode){1920,
 1080, 32}, "SFML Simple Window", sfClose, NULL);
-    sfRenderWindow_setFramerateLimit(window, FRAME_LIMITE);
+    sfRenderWindow_setFramerateLimit(window, 3);
     animations_t *animations = malloc(sizeof(animations_t));
     init_every_struct(&view, animations);
     node_map_t *map_node = init_sprite_config();
